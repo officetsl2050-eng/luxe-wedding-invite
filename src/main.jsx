@@ -4,14 +4,14 @@ import { MapPin, CalendarDays, Heart, Volume2, VolumeX, ArrowDown, Clock, Sparkl
 import './style.css';
 
 const wedding = {
-  bride: 'Aanya',
-  groom: 'Arjun',
-  date: '2027-02-14T19:00:00+05:30',
-  dateLabel: '14 February 2027',
-  venue: 'The Grand Palace',
-  address: 'Aerocity, New Delhi, India',
-  mapsUrl: 'https://maps.google.com/?q=Aerocity+New+Delhi',
-  rsvpNumber: '919876543210' // Replace with the host's WhatsApp number, country code included.
+  bride: 'Naz',
+  groom: 'Sohil Ali',
+  date: '2026-11-21T19:30:00+05:30',
+  venue: 'Clarks Inn Suites, Taj Nagri Phase 2',
+  dateLabel: '21 November 2026',
+  address: 'Clarks Inn Suites, Taj Nagri Phase 2, Agra, Uttar Pradesh, India',
+  mapsUrl: 'https://www.google.com/maps/search/?api=1&query=Clarks+Inn+Suites+Taj+Nagri+Phase+2+Agra',
+  rsvpNumber: '919876543210'
 };
 
 function App() {
@@ -105,41 +105,64 @@ function App() {
         <p className="eyebrow"><span></span> THE WEDDING FESTIVITIES <span></span></p>
         <h2>Celebrate <em>with us</em></h2>
         <p className="body-copy">A few beautiful moments, shared with our favourite people.</p>
-        <div className="event-grid">
-          <article className="event-card">
-            <div className="event-number">01</div><Sparkles size={22} strokeWidth={1.2}/>
-            <h3>Mehendi</h3><p>Colour, laughter & little traditions</p>
-            <div className="event-meta"><CalendarDays size={14}/> 12 February 2027</div>
-            <div className="event-meta"><Clock size={14}/> 4:00 PM onwards</div>
-          </article>
-          <article className="event-card featured">
-            <div className="event-number">02</div><Heart size={22} strokeWidth={1.2}/>
-            <h3>The Wedding</h3><p>The beginning of our forever</p>
-            <div className="event-meta"><CalendarDays size={14}/> 14 February 2027</div>
-            <div className="event-meta"><Clock size={14}/> 7:00 PM onwards</div>
-          </article>
-          <article className="event-card">
-            <div className="event-number">03</div><Sparkles size={22} strokeWidth={1.2}/>
-            <h3>Reception</h3><p>An evening of joy & togetherness</p>
-            <div className="event-meta"><CalendarDays size={14}/> 15 February 2027</div>
-            <div className="event-meta"><Clock size={14}/> 7:30 PM onwards</div>
-          </article>
-        </div>
-        <p className="edit-note">Sample event details — personalise these before sharing.</p>
-      </section>
+      
+<div className="event-grid">
+  <article className="event-card">
+    <div className="event-number">01</div>
+    <Sparkles size={22} strokeWidth={1.2} />
+    <h3>Sangeet</h3>
+    <p>An evening of music, dance & celebration</p>
+    <div className="event-meta"><CalendarDays size={14} /> 18 October 2026</div>
+    <div className="event-meta"><Clock size={14} /> 7:30 PM</div>
+    <div className="event-meta"><MapPin size={14} /> Banquet Riya Palace, Agra</div>
+    <a className="event-map-link" href="https://www.google.com/maps/search/?api=1&query=Banquet+Riya+Palace+Agra" target="_blank" rel="noreferrer">GET DIRECTIONS ↗</a>
+  </article>
 
-      <section className="venue section-pad" id="venue">
-        <div className="venue-image"></div>
-        <div className="venue-panel">
-          <p className="eyebrow light">WHERE IT ALL HAPPENS</p>
-          <h2>Meet us <em>there.</em></h2>
-          <h3>{wedding.venue}</h3>
-          <p>{wedding.address}</p>
-          <div className="venue-actions">
-            <a className="button button-light" href={wedding.mapsUrl} target="_blank" rel="noreferrer"><MapPin size={16}/> OPEN MAPS</a>
-            <button className="button button-outline" onClick={addCalendar}><CalendarDays size={16}/> ADD TO CALENDAR</button>
-          </div>
-        </div>
+  <article className="event-card">
+    <div className="event-number">02</div>
+    <Sparkles size={22} strokeWidth={1.2} />
+    <h3>Haldi</h3>
+    <p>Sunshine, marigolds & family traditions</p>
+    <div className="event-meta"><CalendarDays size={14} /> 20 October 2026</div>
+    <div className="event-meta"><Clock size={14} /> 11:00 AM</div>
+    <div className="event-meta"><MapPin size={14} /> The Green Valley, Agra</div>
+    <a className="event-map-link" href="https://www.google.com/maps/search/?api=1&query=The+Green+Valley+Agra" target="_blank" rel="noreferrer">GET DIRECTIONS ↗</a>
+  </article>
+
+  <article className="event-card">
+    <div className="event-number">03</div>
+    <Heart size={22} strokeWidth={1.2} />
+    <h3>Reception</h3>
+    <p>An evening of joy & togetherness</p>
+    <div className="event-meta"><CalendarDays size={14} /> 23 October 2026</div>
+    <div className="event-meta"><Clock size={14} /> 7:00 PM</div>
+    <div className="event-meta"><MapPin size={14} /> The Palm Court, Agra</div>
+    <a className="event-map-link" href="https://www.google.com/maps/search/?api=1&query=The+Palm+Court+Agra" target="_blank" rel="noreferrer">GET DIRECTIONS ↗</a>
+  </article>
+
+  <article className="event-card">
+    <div className="event-number">04</div>
+    <Sparkles size={22} strokeWidth={1.2} />
+    <h3>Mehendi</h3>
+    <p>Intricate henna & beautiful memories</p>
+    <div className="event-meta"><CalendarDays size={14} /> 20 November 2026</div>
+    <div className="event-meta"><Clock size={14} /> 8:00 PM</div>
+    <div className="event-meta"><MapPin size={14} /> THE RAMANA GRAND, Agra</div>
+    <a className="event-map-link" href="https://www.google.com/maps/search/?api=1&query=THE+RAMANA+GRAND+Agra" target="_blank" rel="noreferrer">GET DIRECTIONS ↗</a>
+  </article>
+
+  <article className="event-card featured">
+    <div className="event-number">05</div>
+    <Heart size={22} strokeWidth={1.2} />
+    <h3>The Wedding</h3>
+    <p>The beginning of our forever</p>
+    <div className="event-meta"><CalendarDays size={14} /> 21 November 2026</div>
+    <div className="event-meta"><Clock size={14} /> 7:30 PM onwards</div>
+    <div className="event-meta"><MapPin size={14} /> Clarks Inn Suites, Taj Nagri Phase 2, Agra</div>
+    <a className="event-map-link" href="https://www.google.com/maps/search/?api=1&query=Clarks+Inn+Suites+Taj+Nagri+Phase+2+Agra" target="_blank" rel="noreferrer">GET DIRECTIONS ↗</a>
+  </article>
+</div>
+
       </section>
 
       <section className="rsvp section-pad">
