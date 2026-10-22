@@ -84,7 +84,7 @@ function App() {
         <p className="eyebrow"><span></span> SAVE THE DATE <span></span></p>
         <h2>Two hearts. <em>One beautiful</em> beginning.</h2>
         <p className="body-copy">With the love of our families and the blessings of those we hold dear, we invite you to join us as we begin our forever.</p>
-        <div className="date-lockup"><CalendarDays size={18}/><span>{wedding.dateLabel}</span><i>·</i><span>New Delhi</span></div>
+        <div className="date-lockup"><CalendarDays size={18}/><span>{wedding.dateLabel}</span><i>·</i><span>New Agrai</span></div>
         <div className="countdown">
           {['days','hours','minutes','seconds'].map(key => <div className="count-unit" key={key}><strong>{String(remaining[key] ?? '00').padStart(2,'0')}</strong><span>{key.toUpperCase()}</span></div>)}
         </div>
